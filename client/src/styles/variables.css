@@ -1,0 +1,7 @@
+/* CSS custom properties */
+:root {
+  --color-bg: #fff;
+  --color-text: #111;
+  --color-primary: #3b82f6;
+  --font-sans: 'Inter', sans-serif;
+}
