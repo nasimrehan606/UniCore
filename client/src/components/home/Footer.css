@@ -1,0 +1,135 @@
+.footer {
+    padding: 80px 0 30px;
+    background: #0f172a;
+}
+
+.footer-container {
+    width: 90%;
+    max-width: 1400px;
+    margin: auto;
+}
+
+/* =====================================================
+   Top
+===================================================== */
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+
+    padding-bottom: 50px;
+
+    border-bottom: 1px solid rgba(255,255,255,.1);
+}
+
+.footer-brand {
+    max-width: 380px;
+}
+
+.footer-brand h2 {
+    margin-bottom: 20px;
+
+    font-size: 2rem;
+
+    color: white;
+}
+
+.footer-brand p {
+    color: rgba(255,255,255,.75);
+
+    line-height: 1.8;
+
+    margin-bottom: 30px;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-socials a {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,.08);
+
+    color: white;
+
+    transition: .3s;
+}
+
+.footer-socials a:hover {
+    background: var(--primary);
+
+    transform: translateY(-4px);
+}
+
+/* =====================================================
+   Links
+===================================================== */
+
+.footer-links {
+    display: flex;
+    gap: 80px;
+}
+
+.footer-links div {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links h4 {
+    margin-bottom: 20px;
+
+    color: white;
+}
+
+.footer-links a {
+    margin-bottom: 14px;
+
+    color: rgba(255,255,255,.7);
+
+    transition: .3s;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+/* =====================================================
+   Bottom
+===================================================== */
+
+.footer-bottom {
+    padding-top: 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-bottom p {
+    color: rgba(255,255,255,.6);
+}
+
+.footer-bottom-links {
+    display: flex;
+    gap: 25px;
+}
+
+.footer-bottom-links a {
+    color: rgba(255,255,255,.6);
+
+    transition: .3s;
+}
+
+.footer-bottom-links a:hover {
+    color: white;
+}

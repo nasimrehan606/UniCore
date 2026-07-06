@@ -1,7 +1,126 @@
-/* CSS custom properties */
 :root {
-  --color-bg: #fff;
-  --color-text: #111;
-  --color-primary: #3b82f6;
-  --font-sans: 'Inter', sans-serif;
+  /* =========================================
+     COLORS
+  ========================================= */
+
+  --primary: #6366f1;
+  --secondary: #8b5cf6;
+  --accent: #06b6d4;
+
+  --success: #22c55e;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+
+  /* Background */
+
+  --bg-primary: #f8fafc;
+  --bg-secondary: #eef2ff;
+  --bg-card: #ffffff;
+
+  /* Text */
+
+  --text-primary: #0f172a;
+  --text-secondary: #64748b;
+  --text-light: #f8fafc;
+
+  /* Borders */
+
+  --border-color: #e2e8f0;
+
+  /* =========================================
+     GRADIENTS
+  ========================================= */
+
+  --gradient-primary: linear-gradient(
+    135deg,
+    #6366f1 0%,
+    #8b5cf6 50%,
+    #06b6d4 100%
+  );
+
+  --gradient-secondary: linear-gradient(
+    135deg,
+    #8b5cf6,
+    #06b6d4
+  );
+
+  /* =========================================
+     GLASS EFFECT
+  ========================================= */
+
+  --glass-bg: rgba(255, 255, 255, 0.65);
+  --glass-border: rgba(255, 255, 255, 0.35);
+  --backdrop-blur: blur(18px);
+
+  /* =========================================
+     SHADOWS
+  ========================================= */
+
+  --shadow-sm: 0 2px 8px rgba(15, 23, 42, 0.05);
+
+  --shadow-md: 0 8px 24px rgba(15, 23, 42, 0.08);
+
+  --shadow-lg: 0 16px 40px rgba(15, 23, 42, 0.12);
+
+  --shadow-xl: 0 25px 60px rgba(15, 23, 42, 0.15);
+
+  /* =========================================
+     BORDER RADIUS
+  ========================================= */
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 24px;
+  --radius-round: 999px;
+
+  /* =========================================
+     SPACING
+  ========================================= */
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+
+  /* =========================================
+     TRANSITIONS
+  ========================================= */
+
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s ease;
+
+  /* =========================================
+     LAYOUT
+  ========================================= */
+
+  --navbar-height: 72px;
+  --sidebar-width: 270px;
+  --container-width: 1400px;
+}
+
+/* =========================================
+   DARK MODE VARIABLES
+========================================= */
+
+[data-theme="dark"] {
+  --bg-primary: #0f172a;
+  --bg-secondary: #1e293b;
+  --bg-card: #1e293b;
+
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+
+  --border-color: #334155;
+
+  --glass-bg: rgba(30, 41, 59, 0.6);
+  --glass-border: rgba(255, 255, 255, 0.08);
 }

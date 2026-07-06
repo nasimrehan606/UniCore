@@ -1,0 +1,212 @@
+.preview {
+    padding: 100px 0;
+}
+
+.preview-container {
+    width: 90%;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.preview-heading {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.preview-heading span {
+    display: inline-block;
+
+    padding: 8px 18px;
+
+    border-radius: 999px;
+
+    background: rgba(99,102,241,.1);
+
+    color: var(--primary);
+
+    font-weight: 600;
+
+    margin-bottom: 20px;
+}
+
+.preview-heading h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.preview-heading h2 span {
+    background: var(--gradient-primary);
+
+    background-clip: text;
+-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.preview-heading p {
+    max-width: 700px;
+    margin: auto;
+}
+
+/* =====================================================
+   Dashboard
+===================================================== */
+
+.dashboard-preview {
+
+    display: flex;
+
+    overflow: hidden;
+
+    background: white;
+
+    border-radius: 30px;
+
+    box-shadow: var(--shadow-xl);
+}
+
+.dashboard-sidebar {
+
+    width: 250px;
+
+    padding: 40px 30px;
+
+    background: #f8f9ff;
+}
+
+.dashboard-sidebar h3 {
+
+    margin-bottom: 40px;
+
+    color: var(--primary);
+}
+
+.dashboard-sidebar ul {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.dashboard-sidebar li {
+
+    padding: 15px 20px;
+
+    border-radius: 14px;
+
+    font-weight: 500;
+
+    cursor: pointer;
+}
+
+.dashboard-sidebar li.active {
+
+    background: var(--gradient-primary);
+
+    color: white;
+}
+
+/* =====================================================
+   Content
+===================================================== */
+
+.dashboard-content {
+
+    flex: 1;
+
+    padding: 40px;
+}
+
+.dashboard-top {
+
+    display: flex;
+
+    gap: 25px;
+
+    margin-bottom: 30px;
+}
+
+.welcome-card {
+
+    flex: 1;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    background: var(--gradient-primary);
+
+    color: white;
+}
+
+.welcome-card h3,
+.welcome-card p {
+    color: white;
+}
+
+.focus-card {
+
+    width: 220px;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    background: #eef2ff;
+
+    text-align: center;
+}
+
+.focus-card svg {
+
+    font-size: 2rem;
+
+    color: var(--primary);
+
+    margin-bottom: 15px;
+}
+
+.dashboard-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+
+    gap: 25px;
+}
+
+.dashboard-widget {
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    background: #f8f9ff;
+
+    transition: .3s;
+}
+
+.dashboard-widget:hover {
+
+    transform: translateY(-6px);
+}
+
+.dashboard-widget svg {
+
+    font-size: 2rem;
+
+    color: var(--primary);
+
+    margin-bottom: 20px;
+}
+
+.dashboard-widget h4 {
+
+    margin-bottom: 10px;
+}
+
+.dashboard-widget span {
+
+    color: var(--text-secondary);
+}
