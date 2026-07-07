@@ -1,0 +1,170 @@
+/* =====================================================
+   About Hero
+===================================================== */
+
+.about-hero {
+    position: relative;
+
+    overflow: hidden;
+
+    margin-top: -130px;
+
+    padding: 240px 0 140px;
+
+    background: linear-gradient(
+        135deg,
+        #eef2ff 0%,
+        #f8faff 50%,
+        #ecfeff 100%
+    );
+}
+
+/* =====================================================
+   Container
+===================================================== */
+
+.about-hero-container {
+    width: 90%;
+    max-width: 900px;
+
+    margin: auto;
+
+    position: relative;
+    z-index: 2;
+
+    text-align: center;
+}
+
+/* =====================================================
+   Breadcrumb
+===================================================== */
+
+.about-breadcrumb {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    margin-bottom: 30px;
+
+    color: var(--text-secondary);
+
+    font-size: .95rem;
+}
+
+/* =====================================================
+   Badge
+===================================================== */
+
+.about-badge {
+    display: inline-block;
+
+    padding: 10px 22px;
+
+    margin-bottom: 30px;
+
+    border-radius: 999px;
+
+    background: rgba(99, 102, 241, .12);
+
+    color: var(--primary);
+
+    font-size: .9rem;
+    font-weight: 600;
+
+    letter-spacing: 1px;
+}
+
+/* =====================================================
+   Heading
+===================================================== */
+
+.about-hero h1 {
+    font-size: 4.5rem;
+
+    line-height: 1.15;
+
+    margin-bottom: 30px;
+}
+
+.about-hero h1 span {
+    background: var(--gradient-primary);
+
+    -webkit-background-clip: text;
+background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* =====================================================
+   Description
+===================================================== */
+
+.about-hero p {
+    max-width: 760px;
+
+    margin: auto;
+
+    font-size: 1.15rem;
+
+    line-height: 1.9;
+
+    margin-bottom: 45px;
+}
+
+/* =====================================================
+   Buttons
+===================================================== */
+
+.about-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.about-primary-btn,
+.about-secondary-btn {
+    padding: 16px 34px;
+
+    border-radius: 999px;
+
+    font-size: 1rem;
+    font-weight: 600;
+
+    transition: .3s;
+}
+
+.about-primary-btn {
+    background: var(--gradient-primary);
+
+    color: white;
+}
+
+.about-secondary-btn {
+    border: 2px solid var(--primary);
+
+    color: var(--primary);
+
+    background: transparent;
+}
+
+.about-primary-btn:hover,
+.about-secondary-btn:hover {
+    transform: translateY(-5px);
+}
+
+/* =====================================================
+   Background Glow
+===================================================== */
+
+.about-hero::before{
+    content:"";
+
+    position:absolute;
+    inset:0;
+
+    background:
+        radial-gradient(circle at 10% 20%, rgba(99,102,241,.18), transparent 30%),
+        radial-gradient(circle at 90% 80%, rgba(6,182,212,.15), transparent 35%),
+        radial-gradient(circle at 50% 50%, rgba(139,92,246,.08), transparent 45%);
+
+    pointer-events:none;
+}

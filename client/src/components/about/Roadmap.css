@@ -1,0 +1,166 @@
+/* =====================================================
+   Roadmap
+===================================================== */
+
+.roadmap {
+    padding: 120px 0;
+
+    background: linear-gradient(
+        180deg,
+        #f8faff 0%,
+        #ffffff 100%
+    );
+}
+
+.roadmap-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* =====================================================
+   Heading
+===================================================== */
+
+.roadmap-heading {
+    max-width: 760px;
+
+    margin: auto auto 80px;
+
+    text-align: center;
+}
+
+.roadmap-heading span {
+    display: inline-block;
+
+    padding: 10px 22px;
+
+    margin-bottom: 25px;
+
+    border-radius: 999px;
+
+    background: rgba(99,102,241,.1);
+
+    color: var(--primary);
+
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+.roadmap-heading h2 {
+    margin-bottom: 25px;
+
+    font-size: 3.2rem;
+
+    line-height: 1.2;
+}
+
+.roadmap-heading h2 span {
+    background: var(--gradient-primary);
+
+    -webkit-background-clip: text;
+background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.roadmap-heading p {
+    line-height: 1.9;
+}
+
+/* =====================================================
+   Timeline
+===================================================== */
+
+.roadmap-timeline {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.roadmap-timeline::before {
+    content: "";
+
+    position: absolute;
+
+    left: 34px;
+    top: 0;
+    bottom: 0;
+
+    width: 3px;
+
+    background: rgba(99,102,241,.15);
+}
+
+.roadmap-item {
+    position: relative;
+
+    display: flex;
+    gap: 30px;
+
+    align-items: flex-start;
+}
+
+.roadmap-icon {
+    width: 70px;
+    height: 70px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: var(--gradient-primary);
+
+    color: white;
+
+    font-size: 1.6rem;
+
+    z-index: 2;
+}
+
+.roadmap-content {
+    flex: 1;
+
+    padding: 30px;
+
+    background: white;
+
+    border-radius: 24px;
+
+    border: 1px solid rgba(99,102,241,.08);
+
+    box-shadow: var(--shadow-md);
+
+    transition: .3s;
+}
+
+.roadmap-content:hover {
+    transform: translateY(-6px);
+
+    box-shadow: var(--shadow-xl);
+}
+
+.roadmap-content span {
+    display: inline-block;
+
+    margin-bottom: 12px;
+
+    color: var(--primary);
+
+    font-weight: 600;
+}
+
+.roadmap-content h3 {
+    margin-bottom: 15px;
+
+    font-size: 1.5rem;
+}
+
+.roadmap-content p {
+    line-height: 1.8;
+}

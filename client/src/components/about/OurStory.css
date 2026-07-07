@@ -1,0 +1,174 @@
+/* =====================================================
+   Our Story
+===================================================== */
+
+.our-story {
+    padding: 120px 0;
+}
+
+.our-story-container {
+    width: 90%;
+    max-width: 1400px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1.1fr .9fr;
+    gap: 80px;
+    align-items: center;
+}
+
+/* =====================================================
+   Content
+===================================================== */
+
+.story-badge {
+    display: inline-block;
+
+    padding: 10px 22px;
+
+    margin-bottom: 25px;
+
+    border-radius: 999px;
+
+    background: rgba(99, 102, 241, .1);
+
+    color: var(--primary);
+
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+.story-content h2 {
+    margin-bottom: 25px;
+
+    font-size: 3.2rem;
+
+    line-height: 1.2;
+}
+
+.story-content h2 span {
+    background: var(--gradient-primary);
+
+    -webkit-background-clip: text;
+background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.story-content > p {
+    margin-bottom: 20px;
+
+    font-size: 1.05rem;
+
+    line-height: 1.9;
+}
+
+/* =====================================================
+   Highlights
+===================================================== */
+
+.story-highlights {
+    margin-top: 40px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.story-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+}
+
+.story-icon {
+    width: 65px;
+    height: 65px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 18px;
+
+    background: var(--gradient-primary);
+
+    color: white;
+
+    font-size: 1.4rem;
+
+    flex-shrink: 0;
+}
+
+.story-item h4 {
+    margin-bottom: 8px;
+}
+
+/* =====================================================
+   Visual
+===================================================== */
+
+.story-card {
+    padding: 30px;
+
+    background: white;
+
+    border-radius: 30px;
+
+    box-shadow: var(--shadow-lg);
+
+    border: 1px solid rgba(99, 102, 241, .08);
+}
+
+.story-header {
+    display: flex;
+    gap: 10px;
+
+    margin-bottom: 25px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+
+    border-radius: 50%;
+}
+
+.red {
+    background: #ff5f57;
+}
+
+.yellow {
+    background: #febc2e;
+}
+
+.green {
+    background: #28c840;
+}
+
+.story-body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.story-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.story-box {
+    height: 110px;
+
+    border-radius: 18px;
+
+    background: #eef2ff;
+}
+
+.story-box.large {
+    height: 220px;
+}
+
+.story-box.wide {
+    height: 100px;
+}
