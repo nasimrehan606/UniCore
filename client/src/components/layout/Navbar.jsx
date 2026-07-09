@@ -1,29 +1,73 @@
 import "./Navbar.css";
+import { NavLink } from "react-router-dom";
 
 /**
- * Displays the main navigation bar.
+ * Displays the website navigation bar.
  *
  * @returns {JSX.Element}
  */
 function Navbar() {
   return (
     <header className="navbar">
-      <div className="navbar-container">
-        <div className="navbar-logo">
-          <h2>UniCore</h2>
-        </div>
 
-        <nav className="navbar-links">
-          <a href="#">Home</a>
-          <a href="#">Features</a>
-          <a href="#">About</a>
-          <a href="#">Contact</a>
+      <div className="navbar-container">
+
+        <NavLink
+          to="/"
+          className="logo"
+        >
+          UniCore
+        </NavLink>
+
+        <nav className="nav-menu">
+
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              isActive ? "nav-link active" : "nav-link"
+            }
+          >
+            Home
+          </NavLink>
+
+          <NavLink
+            to="/features"
+            className={({ isActive }) =>
+              isActive ? "nav-link active" : "nav-link"
+            }
+          >
+            Features
+          </NavLink>
+
+          <NavLink
+            to="/about"
+            className={({ isActive }) =>
+              isActive ? "nav-link active" : "nav-link"
+            }
+          >
+            About
+          </NavLink>
+
+          <NavLink
+            to="/contact"
+            className={({ isActive }) =>
+              isActive ? "nav-link active" : "nav-link"
+            }
+          >
+            Contact
+          </NavLink>
+
         </nav>
 
-        <button className="navbar-button">
+        <NavLink
+          to="/login"
+          className="navbar-btn"
+        >
           Get Started
-        </button>
+        </NavLink>
+
       </div>
+
     </header>
   );
 }

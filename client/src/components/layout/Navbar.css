@@ -2,126 +2,198 @@
    Navbar
 ===================================================== */
 
-.navbar {
-  width: 100%;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+.navbar{
 
-  padding: 20px 0;
+    position:fixed;
 
-  background: transparent;
+    top:20px;
+    left:0;
+
+    width:100%;
+
+    z-index:1000;
 }
 
-/* =====================================================
-   Container
-===================================================== */
+.navbar-container{
 
-.navbar-container {
-  width: 90%;
-  max-width: 1400px;
+    width:90%;
+    max-width:1400px;
 
-  margin: auto;
+    margin:auto;
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    height:90px;
 
-  padding: 18px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 
-  background: rgba(255, 255, 255, 0.85);
+    padding:0 40px;
 
-  backdrop-filter: blur(16px);
+    background:rgba(255,255,255,.82);
 
-  border: 1px solid rgba(255, 255, 255, 0.4);
+    backdrop-filter:blur(18px);
 
-  border-radius: 22px;
+    border:1px solid rgba(255,255,255,.35);
 
-  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+    border-radius:26px;
+
+    box-shadow:0 15px 40px rgba(15,23,42,.08);
 }
 
 /* =====================================================
    Logo
 ===================================================== */
 
-.navbar-logo h2 {
-  font-size: 2rem;
-  font-weight: 700;
+.logo{
 
-  background: var(--gradient-primary);
-  background-clip: text;
--webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    text-decoration:none;
+
+    font-size:2rem;
+
+    font-weight:800;
+
+    color:var(--primary);
 }
 
 /* =====================================================
    Navigation
 ===================================================== */
 
-.navbar-links {
-  display: flex;
-  align-items: center;
-  gap: 40px;
+.nav-menu{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:45px;
 }
 
-.navbar-links a {
-  position: relative;
+.nav-link{
 
-  font-size: 1rem;
-  font-weight: 500;
+    position:relative;
 
-  color: var(--text-primary);
+    text-decoration:none;
 
-  transition: 0.3s;
+    color:var(--text-primary);
+
+    font-size:1rem;
+
+    font-weight:500;
+
+    transition:.3s;
 }
 
-.navbar-links a::after {
-  content: "";
+.nav-link:hover{
 
-  position: absolute;
-
-  left: 0;
-  bottom: -8px;
-
-  width: 0;
-  height: 3px;
-
-  background: var(--primary);
-
-  border-radius: 50px;
-
-  transition: 0.3s;
+    color:var(--primary);
 }
 
-.navbar-links a:hover {
-  color: var(--primary);
+.nav-link::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    bottom:-8px;
+
+    width:0;
+    height:2px;
+
+    background:var(--gradient-primary);
+
+    transition:.3s;
 }
 
-.navbar-links a:hover::after {
-  width: 100%;
+.nav-link:hover::after,
+
+.nav-link.active::after{
+
+    width:100%;
+}
+
+.nav-link.active{
+
+    color:var(--primary);
+
+    font-weight:600;
 }
 
 /* =====================================================
    Button
 ===================================================== */
 
-.navbar-button {
-  padding: 14px 32px;
+.navbar-btn{
 
-  border-radius: 50px;
+    text-decoration:none;
 
-  background: var(--gradient-primary);
+    display:flex;
+    justify-content:center;
+    align-items:center;
 
-  color: white;
+    padding:15px 32px;
 
-  font-size: 0.95rem;
-  font-weight: 600;
+    border-radius:999px;
 
-  transition: 0.3s;
+    background:var(--gradient-primary);
+
+    color:#fff;
+
+    font-weight:600;
+
+    transition:.3s;
 }
 
-.navbar-button:hover {
-  transform: translateY(-3px);
+.navbar-btn:hover{
 
-  box-shadow: 0 15px 30px rgba(99, 102, 241, 0.35);
+    transform:translateY(-4px);
+
+    box-shadow:0 12px 30px rgba(99,102,241,.25);
+}
+
+/* =====================================================
+   Responsive
+===================================================== */
+
+@media (max-width:992px){
+
+    .navbar-container{
+
+        padding:0 25px;
+    }
+
+    .nav-menu{
+
+        gap:25px;
+    }
+}
+
+@media (max-width:768px){
+
+    .navbar{
+
+        top:15px;
+    }
+
+    .navbar-container{
+
+        height:75px;
+
+        padding:0 20px;
+    }
+
+    .nav-menu{
+
+        display:none;
+    }
+
+    .navbar-btn{
+
+        padding:12px 22px;
+    }
+
+    .logo{
+
+        font-size:1.6rem;
+    }
 }

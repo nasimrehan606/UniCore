@@ -1,3 +1,275 @@
-.achievements {
-  padding: 2rem 0;
+/* =====================================================
+   Achievements
+===================================================== */
+
+.achievements{
+    padding:120px 0;
+
+    background:#fafbff;
+}
+
+.achievements-container{
+    width:90%;
+    max-width:1400px;
+
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:80px;
+    align-items:center;
+}
+
+/* =====================================================
+   Preview
+===================================================== */
+
+.achievement-window{
+    background:#fff;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow-xl);
+}
+
+.achievement-header{
+    display:flex;
+
+    gap:10px;
+
+    padding:20px 25px;
+
+    border-bottom:1px solid #ececec;
+}
+
+.achievement-dot{
+    width:12px;
+    height:12px;
+
+    border-radius:50%;
+}
+
+.red{background:#ff5f57;}
+.yellow{background:#febc2e;}
+.green{background:#28c840;}
+
+.achievement-body{
+    padding:30px;
+}
+
+.achievement-title{
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:28px;
+}
+
+.achievement-title span{
+    padding:8px 16px;
+
+    border-radius:999px;
+
+    background:rgba(99,102,241,.12);
+
+    color:var(--primary);
+
+    font-size:.85rem;
+
+    font-weight:600;
+}
+
+.achievement-card{
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    padding:18px;
+
+    margin-bottom:18px;
+
+    border-radius:18px;
+
+    background:#f8faff;
+
+    transition:.3s;
+}
+
+.achievement-card:hover{
+    transform:translateX(8px);
+}
+
+.achievement-icon{
+    width:60px;
+    height:60px;
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    border-radius:18px;
+
+    color:#fff;
+
+    font-size:1.4rem;
+}
+
+.gold{
+    background:linear-gradient(135deg,#fbbf24,#f59e0b);
+}
+
+.orange{
+    background:linear-gradient(135deg,#fb923c,#ea580c);
+}
+
+.purple{
+    background:linear-gradient(135deg,#8b5cf6,#6366f1);
+}
+
+.achievement-card h5{
+    margin-bottom:6px;
+}
+
+.achievement-card small{
+    color:var(--text-secondary);
+}
+
+/* =====================================================
+   XP Progress
+===================================================== */
+
+.xp-section{
+    margin-top:30px;
+}
+
+.xp-info{
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-bottom:12px;
+}
+
+.xp-bar{
+    width:100%;
+    height:10px;
+
+    overflow:hidden;
+
+    border-radius:999px;
+
+    background:#e5e7eb;
+}
+
+.xp-fill{
+    width:82%;
+    height:100%;
+
+    background:linear-gradient(
+        90deg,
+        #fbbf24,
+        #f59e0b
+    );
+}
+
+/* =====================================================
+   Content
+===================================================== */
+
+.achievements-badge{
+    display:inline-block;
+
+    padding:10px 22px;
+
+    margin-bottom:25px;
+
+    border-radius:999px;
+
+    background:rgba(99,102,241,.1);
+
+    color:var(--primary);
+
+    font-size:.9rem;
+
+    font-weight:600;
+}
+
+.achievements-content h2{
+    font-size:3.2rem;
+
+    line-height:1.2;
+
+    margin-bottom:25px;
+}
+
+.achievements-content h2 span{
+    background:var(--gradient-primary);
+
+   background-clip: text;
+-webkit-background-clip: text;
+
+    -webkit-text-fill-color:transparent;
+}
+
+.achievements-content p{
+    margin-bottom:35px;
+
+    line-height:1.8;
+}
+
+.achievements-list{
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+    margin-bottom:40px;
+}
+
+.achievements-item{
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    font-weight:500;
+}
+
+.achievements-item svg{
+    color:#f59e0b;
+
+    font-size:1.3rem;
+}
+
+.achievements-btn{
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:16px 32px;
+
+    border-radius:999px;
+
+    background:var(--gradient-primary);
+
+    color:#fff;
+
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.achievements-btn:hover{
+    transform:translateY(-5px);
 }

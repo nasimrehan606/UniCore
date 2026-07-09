@@ -1,7 +1,7 @@
 import React from "react";
+import Navbar from "../components/layout/Navbar";
 import FeaturesHero from "../components/features/FeaturesHero";
 import FeaturesOverview from "../components/features/FeaturesOverview";
-import CoreModules from "../components/features/CoreModules";
 import DailyPlanner from "../components/features/DailyPlanner";
 import TaskManager from "../components/features/TaskManager";
 import HabitTracker from "../components/features/HabitTracker";
@@ -13,9 +13,9 @@ import Calendar from "../components/features/Calendar";
 import Analytics from "../components/features/Analytics";
 import Achievements from "../components/features/Achievements";
 import WhyChoose from "../components/features/WhyChoose";
-import Comparison from "../components/features/Comparison";
-import FAQ from "../components/features/FAQ";
-import CTA from "../components/features/CTA";
+import FAQPreview from "../components/about/FAQPreview";
+import CTA from "../components/about/CTA";
+import Footer from "../components/home/Footer";
 
 /**
  * Displays the features page.
@@ -25,9 +25,9 @@ import CTA from "../components/features/CTA";
 function Features() {
   return (
     <main>
+      <Navbar />
       <FeaturesHero />
       <FeaturesOverview />
-      <CoreModules />
       <DailyPlanner />
       <TaskManager />
       <HabitTracker />
@@ -39,9 +39,9 @@ function Features() {
       <Analytics />
       <Achievements />
       <WhyChoose />
-      <Comparison />
-      <FAQ />
+      <FAQPreview/>
       <CTA />
+      <Footer />
     </main>
   );
 }

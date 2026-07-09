@@ -1,0 +1,31 @@
+/* ==========================================
+   Login Page
+========================================== */
+
+.login-page{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:120px 20px 60px;
+
+    background:
+        radial-gradient(circle at top left,
+            rgba(99,102,241,.15),
+            transparent 35%),
+
+        radial-gradient(circle at bottom right,
+            rgba(59,130,246,.12),
+            transparent 40%),
+
+        linear-gradient(
+            180deg,
+            #f8faff 0%,
+            #ffffff 100%
+        );
+}
